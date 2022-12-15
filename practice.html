@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="practice.css">
+    <title>CA Department</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Department of Computer Aapplication</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#" class="tablinks" onclick="openCity(event, 'London')"
+                    id="defaultOpen">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Computer_Applications_(UIL)">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="main-div">
+        <div class="tab">
+            <h1>Menu</h1>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">GALLERY</button>
+            <button class="tablinks" onclick="openCity(event, 'nepal')">INFRASTRUCTURE</button>
+            <button class="tablinks" onclick="openCity(event, 'dubai')">TIME TABLE</button>
+            <button class="dropdown-btn">COURSE
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <button class="tablinks" onclick="openCity(event, 'quwait')"><a href="#">BCA</a></button>
+                <button class="tablinks" onclick="openCity(event, 'india')"><a href="#">MCA</a></button>
+                <button class="tablinks" onclick="openCity(event, 'qatar')"><a href="#">Dr in Computer
+                        Application</a></button>
+            </div>
+        </div>
+
+        <div id="London" class="tabcontent bg">
+            <h3 class="logo">Welcome To CA Department</h3>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="./images/pic-3.jpg" style="width:100%" height="500px">
+                    <div class="text">DEVELOPMENT</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="./images/pic-6.jpg" style="width:100%" height="500px">
+                    <div class="text">KNOWLEDGE & DETERMINATION</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+
+            </div>
+            <p class="p-2">The Department promotes research advancements by offering doctoral program, contributing in
+                the creation of future researchers and powerful academicians. The thrust areas offered by the Department
+                are Big Data Analytics, Cloud Computing, Image Processing, Web Engineering, and Software Engineering.
+                The department has dedicated staff who, through on-going research, keeps abreast of new developments in
+                respective fields of study.<br><br> Our staffs are very active researchers, publishing widely in international
+                and local accredited journals, presenting many papers at conferences and producing many other research
+                outputs of high international standard. The department continues to build on a tradition of excellence
+                and innovation in research, teaching, and service to create a vibrant community of faculty, graduate
+                students, and undergraduate students that are ready to make a difference in the world. I invite you to
+                look over these webpages and learn more about the opportunities the Department of Computer Application
+                offers our undergraduate and graduate students.</p>
+                <ul class="p-2">
+                    <li>BCA</li>
+                    <li>MCA</li>
+                    <li>Doctor of Philosophy in Computer Application</li>
+                </ul>
+        </div>
+
+        <div id="Paris" class="tabcontent bg-1">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <div class="row">
+                <div class="column">
+                    <img src="./images/pic-3.jpg" class="img-5" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="./images/pic-6.jpg" class="img-5" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="./images/img_snow_wide.jpg" class="img-5" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="./images/img_nature_wide.jpg" class="img-5" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="./images/img_mountains_wide.jpg" class="img-5" onclick="myFunction(this);">
+                </div>
+
+            </div>
+
+            <!-- The expanding image container -->
+            <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                <!-- Expanded image -->
+                <img id="expandedImg" class="img-4">
+
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div>
+
+        </div>
+
+        <div id="india" class="tabcontent">
+            <div class="card">
+                <img src="./images/pic-6.jpg" class="img-1">
+                <h2 class="h1-5">Master of Computer Application</h2>
+                <h1 class="h1-1">Duration 2-yr</h1>
+                <hr class="hr">
+                <h3 class="h2-1">Master of Aomputer Application</h3>
+                <h3 class="h3-3">Eligibility:<p class="p-3"> Graduation, Passed, Mathematics at 10+2 level or at
+                        Graduate Level</p>
+                </h3>
+                <button class="first-btn">Apply Now</button>
+            </div>
+        </div>
+        <div id="qatar" class="tabcontent">
+            <div class="card">
+                <img src="./images/pic-8.jpg" class="img-1">
+                <h2 class="h1-5">Doctor of Philosophy in Computer Application</h2>
+                <h1 class="h1-1">Duration: min 3-yr</h1>
+                <hr class="hr">
+                <h3 class="h2-1">Doctor of Philosophy in Computer Application</h3>
+                <h3 class="h3-3">Eligibility:<p class="p-3">Masters, 60%, From the same subject</p>
+                </h3>
+                <button class="first-btn">Apply Now</button>
+            </div>
+        </div>
+
+        <div id="quwait" class="tabcontent bg-9">
+            <div class="card">
+                <img src="./images/pic-3.jpg" class="img-1">
+                <h2 class="h1-5">Bachelor of Computer Application</h2>
+                <h1 class="h1-1">Duration 3-yr</h1>
+                <hr class="hr">
+                <h3 class="h2-1">Bachelor of ComputerAapplication</h3>
+                <h3 class="h3-3">Eligibility:<p class="p-3"> 10+2, 45%, Any Subjects</p>
+                </h3>
+                <button class="first-btn">Apply Now</button>
+            </div>
+        </div>
+
+        <div id="nepal" class="tabcontent">
+            <p class="p-1">INFRASTRUCTURE</p>
+            <table>
+                <tr>
+                    <th>ROOM</th>
+                    <th>NAME</th>
+                    <th>AREA</th>
+                    <th>CAPACITY</th>
+                    <th>CONFIGURATION</th>
+                </tr>
+                <tr>
+                    <td>CA-1</td>
+                    <td>Web Developing Lab</td>
+                    <td>860 Sq.Ft.</td>
+                    <td>30 Student</td>
+                    <td>C2D/32GB/18.5/HP
+                        3090 PC/Operating
+                        System-UBUNTU
+                    </td>
+                </tr>
+                <tr>
+                    <td>CA-2</td>
+                    <td>Project Lab</td>
+                    <td>860 Sq.Ft.</td>
+                    <td>30 Student</td>
+                    <td>C2D/32GB/18.5/HP
+                        3090 PC/Operating
+                        System-UBUNTU
+                    </td>
+                </tr>
+                <tr>
+                    <td>CA-3</td>
+                    <td>Graphich & Multimedia Lab</td>
+                    <td>1020 Sq.Ft.</td>
+                    <td>30 Student</td>
+                    <td>l5//500GB/DVDRW/18.5
+                        TFT/HP3330PC/Operating
+                        System-Windows 8
+                    </td>
+                </tr>
+                <tr>
+                    <td>CA-4</td>
+                    <td>Database Lab</td>
+                    <td>910 Sq.Ft.</td>
+                    <td>30 Student</td>
+                    <td>l5//500GB/DVDRW/18.5
+                        TFT/HP3330PC/Operating
+                        System-Windows 8
+                    </td>
+                </tr>
+                <tr>
+                    <td>CA-5</td>
+                    <td>Open Source Lab</td>
+                    <td>890 Sq.Ft.</td>
+                    <td>30 Student</td>
+                    <td>l5//500GB/DVDRW/18.5
+                        TFT/HP3330PC/Operating
+                        System-Windows 8
+                    </td>
+                </tr>
+                <tr>
+                    <td>CA-6</td>
+                    <td>Programming Lab</td>
+                    <td>1280 Sq.Ft.</td>
+                    <td>30 Student</td>
+                    <td>C2D/32GB/2GB/18.5
+                        TFT/DVDRW/Operating
+                        System-UBUNTU
+                    </td>
+                </tr>
+                <tr>
+                    <td>CA-7</td>
+                    <td>Programming Lab</td>
+                    <td>1200 Sq.Ft.</td>
+                    <td>30 Student</td>
+                    <td>l5/500GB/DVDRW/18.5
+                        TFT/HP3330PC/Operating
+                        System-Windows 8
+                    </td>
+                </tr>
+                <tr>
+                    <td>Smart Class Room</td>
+                    <td>SEMINAR/PRESENTATION</td>
+                    <td>1388.89 Sq.Ft.</td>
+                    <td>90 Student</td>
+                    <td>Projector, Computer
+                        System, UPS, Mike, France
+                        Ac, Chair, Table, Prodium
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="dubai" class="tabcontent">
+            <p class="p-1"> TIME TABLE (G-2)</p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>
+                        <h4>1</h4>
+                        <p>9:00 to 9:50</p>
+                    </th>
+                    <th>
+                        <h4>2</h4>
+                        <p>9:50 to 10:40</p>
+                    </th>
+                    <th>
+                        <h4>3</h4>
+                        <p>10:40 to 11:30</p>
+                    </th>
+                    <th>
+                        <h4>4</h4>
+                        <p>11:30 to 12:20</p>
+                    </th>
+                    <th>
+                        <h4>Lunch Break</h4>
+                        <p>12:20 to 1:30</p>
+                    </th>
+                    <th>
+                        <h4>5</h4>
+                        <p>9:00 to 9:50</p>
+                    </th>
+                    <th>
+                        <h4>6</h4>
+                        <p>9:00 to 9:50</p>
+                    </th>
+                    <th>
+                        <h4>7</h4>
+                        <p>3:10 to 4:00</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td>CA-303 <p>FLT-1</p>
+                    </td>
+                    <td>CA-301 <p>FLT-1</p>
+                    </td>
+                    <td></td>
+                    <td>CA-307 <p>BNLT-2</p>
+                    </td>
+                    <td rowspan="6"></td>
+                    <td colspan="3"></td>
+
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>CA-307 <p>BNLT-1</p>
+                    </td>
+                    <td>CA-302 <p>LT-13</p>
+                    </td>
+                    <td>CA-302 <p>LT-13</p>
+                    </td>
+                    <td>CA-304 <p>LT-13</p>
+                    </td>
+                    <td></td>
+                    <td colspan="2">CA-312 <p>CA-6</p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td colspan="3">CA-310 <p>CA-7</p>
+                    </td>
+                    <td>CA-302 <p>LT-13</p>
+                    </td>
+
+                    <td>CA-304 <p>BNLT-10</p>
+                    </td>
+                    <td>CA-301 <p>BNLT-10</p>
+                    </td>
+                    <td>CA-303 <p>BNLT-10</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>CCA-307 <p>BNLT-10</p>
+                    </td>
+                    <td>PPP(Soft Skill) <p>FLT-1</p>
+                    </td>
+                    <td>CA-301 <p>BNLT-10</p>
+                    </td>
+                    <td></td>
+
+                    <td>CA-302 <p>LT-12</p>
+                    </td>
+                    <td></td>
+                    <td>PPP(APTI) <p>BNLT-9</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>CA-304<p>BNLT-7</p>
+                    </td>
+                    <td colspan="3">CA-311<p>CA-1</p>
+                    </td>
+
+                    <td></td>
+
+                    <td>CA303 <p>BNLT-10</p>
+                    </td>
+                    <td>CA-303 <p>BNLT-10</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td></td>
+                    <td>CA-304<p>BNLT-2</p>
+                    </td>
+                    <td>CA-301<p>BNLT-2</p>
+                    </td>
+                    <td>CA-307<p>BNLT-2</p>
+                    </td>
+
+                    <td colspan="3"></td>
+
+                </tr>
+            </table>
+        </div>
+        <div class="right-sidebar">
+            <img src="./images/pic-9.jpg" class="pic-9">
+            <img src="./images/D.png" class="pic-10">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="p-footer">Sign up <input type="email" class="p-footer input-footer" placeholder="Enter Your Email"
+                style="color: black;"><button class="footer-btn">Subscribe</button></p>
+
+    </div>
+    <span>
+        <h1>© 2020 Copyright: ComputerAapplication.Com</h1>
+    </span>
+</body>
+<script src="practice.js"></script>
+<script src="index.js"></script>
+
+</html>
